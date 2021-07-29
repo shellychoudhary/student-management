@@ -1,0 +1,48 @@
+Project name :- Student Management System
+--------------------------------------------
+
+Features:-
+-----------
+LogIn/LogOut for Admin.
+On Home Page- Show details of the students by entering roll no.
+Students details:-
+	1. Add new details.
+	2.Update existing details.
+	3.Delete student details.
+---------------------------------------------
+Flow And Directory Structure:-
+-----------------------------
+index.php -> Home Page of our project.
+dbcon.php -> Code for the connection to database.
+login.php -> Stores the code for the login page.
+logout.php -> contains the code for the logout page.
+addstudent.php -> code for the new entries of students.
+updatestudent.php -> code for updating the existing student entries.
+deletestudent.php -> code for deleting the existing student record.
+cadmin.php -> stores the code for the cresdentials changing page.
+admindash.php -> contains the code for the dashboard of website where the admin lands after logging in.
+updateform.php -> Contains the code for the student data updation form (old data will be shown).
+updatedata.php -> contains the coe for the update query (new data will be shown on it).
+___________________________________________________________________________________________________________________________________
+ 
+CSS(folder) -> Contains all the stylesheets of our prject.
+JS(folder) -> Contains all the Javascript codes for our project.
+images(folder) -> Contains all the images that we are displaying in our project.
+fonts(folder) -> Contains the files of external fonts in case we use them.
+assets(folder) -> Contains the files of external plugins in case we use them in our project.
+dataimg(folder) -> Contains the pictures of the registerd students.
+admin(folder) -> Contains the coding pages of the admin operations.
+-------------------------------------------------------------------------
+DATABASE DETAILS:-
+-------------------
+Database name:- sms
+
+Table Name 			Fields
+------------			-------
+
+admin				id(int), username(varchar), password(varchar)
+students			id(int), rollno(int), name(varchar), city(varchar), parents contact(int), standard(int), 
+				image(Text)
+
+'id' is used in stuents(Table) to generate the unique id for all the individual students because 
+the roll number can be same for two students in different classes.
